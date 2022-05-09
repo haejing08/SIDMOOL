@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>시드물</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=M+PLUS+1:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      $(function () {
+        setInterval(function () {
+          $(".slide").animate({ "margin-left": "-100%" }, 3000, function () {
+            $(".slide>li:first").insertAfter(".slide>li:last");
+            $(".slide").css("margin-left", 0);
+          });
+        }, 3000);
+
+        setInterval(function () {
+          $(".slide2").animate({ "margin-left": "-100%" }, 3000, function () {
+            $(".slide2>li:first").insertAfter(".slide2>li:last");
+            $(".slide2").css("margin-left", 0);
+          });
+        }, 3000);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <div class="inner">
+          <h1 class="logo">
+            <img src="image/logo_01.png" alt="logo" />
+          </h1>
+          <nav>
+            <ul class="top_menu01 clear">
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+              <li><a href="#">장바구니</a></li>
+              <li><a href="#">주문조회</a></li>
+              <li><a href="#">마이페이지</a></li>
+              <li><a href="#">고객센터</a></li>
+            </ul>
+          </nav>
+          <!-- .toggle -> 햄버거 메뉴 -->
+          <div class="toggle"></div>
+        </div>
+        <nav class="mainbox">
+          <ul class="top_menu02 clear">
+            <li>
+              <a href="#">피부타입별</a>
+              <ul class="sub_menu">
+                <li><a href="#">건성피부</a></li>
+                <li><a href="#">중성피부</a></li>
+                <li><a href="#">지성피부</a></li>
+                <li><a href="#">복합성피부</a></li>
+                <li><a href="#">민감성피부</a></li>
+                <li><a href="#">아토피피부</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">내츄럴99</a>
+              <ul class="sub_menu02 clear">
+                <li><a href="#">클렌징</a></li>
+                <li><a href="#">퍼스트에센스</a></li>
+                <li><a href="#">스킨토너미스트</a></li>
+                <li><a href="#">앰플</a></li>
+                <li><a href="#">에센스세럼</a></li>
+                <li><a href="#">수분젤로션</a></li>
+                <li><a href="#">크림</a></li>
+                <li><a href="#">립&아이</a></li>
+                <li><a href="#">페이스&바디오일</a></li>
+                <li><a href="#">바디&헤어</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">이벤트</a>
+              <ul class="sub_menu03 clear">
+                <li><a href="#">매일매일 출석하고 </a></li>
+                <li><a href="#">멤버쉽을 위한 이벤트</a></li>
+                <li><a href="#">친구초대하고 포인트 받자</a></li>
+                <li><a href="#">11월 카톡채널 추가이벤트</a></li>
+                <li><a href="#">일생 단 한번의 기회 </a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">시드물 소개</a>
+              <ul class="sub_menu04 clear">
+                <li><a href="#">개요/연혁/소개</a></li>
+                <li><a href="#">개발 및 품질관리</a></li>
+                <li><a href="#">스킨토너미스트</a></li>
+                <li><a href="#">시드물 오시는 길</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">시드물 통신</a></li>
+                <li><a href="#">동영상게시판</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">커뮤니티</a>
+              <ul class="sub_menu05 clear">
+                <li><a href="#">포토후기</a></li>
+                <li><a href="#">사용후기</a></li>
+                <li><a href="#">시사모 자유게시판</a></li>
+                <li><a href="#">시드물 매니아</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="search">
+            <i class="fas fa-search"></i>
+          </div>
+        </nav>
+      </header>
+      <div id="slider">
+        <ul class="slide">
+          <li><img src="image/image01.jpg" alt="1" /></li>
+          <li><img src="image/image02.jpg" alt="2" /></li>
+        </ul>
+      </div>
+      <div id="content">
+        <div class="best">
+          <h2 class="con_title">Best Product</h2>
+          <ul class="list clear">
+            <li>
+              <a href="">
+                <img src="image/03.jpg" alt="1" />
+                <div class="caption">
+                  <h3>PACK</h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="image/02.jpg" alt="1" />
+                <div class="caption">
+                  <h3>CREAM</h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="image/01.jpg" alt="1" />
+                <div class="caption">
+                  <h3>AMPLE</h3>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="product">
+          <h2 class="con_title">All Product</h2>
+          <ul class="list clear">
+            <li>
+              <a href="">
+                <img src="image/04.png" alt="1" />
+                <div class="caption">
+                  <button>기능별</button>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="image/ima02.jpg" alt="1" />
+                <div class="caption">
+                  <button>성분라인별</button>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="image/ima03.jpg" alt="1" />
+                <div class="caption">
+                  <button>고민별</button>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="image/ima05.jpg" alt="1" />
+                <div class="caption">
+                  <button>내츄럴99</button>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="slider2">
+          <h2 class="con_title">Series Collection</h2>
+          <ul class="slide2">
+            <li><img src="image/series.slider01.jpg" alt="0" /></li>
+            <li><img src="image/series.slider02.jpg" alt="1" /></li>
+            <li><img src="image/series.slider03.jpg" alt="2" /></li>
+            <li><img src="image/series.slider04.jpg" alt="3" /></li>
+            <li><img src="image/series.slider05.jpg" alt="4" /></li>
+            <li><img src="image/series.slider06.jpg" alt="5" /></li>
+          </ul>
+        </div>
+      </div>
+      <footer>
+        <div class="inner">
+          <div class="btn_logo"><img src="image/10.png" alt="logo" /></div>
+          <ul class="copy clear">
+            <li>
+              상호: 주식회사 시드물 &nbsp; &nbsp; &nbsp; 주소:우)35083
+              대전광역시 중구 안영로 42 &nbsp; &nbsp;&nbsp; 전화:1577-9638
+            </li>
+            <li>
+              건강식품판매업:대전 중구 제 503 &nbsp; &nbsp; &nbsp; &nbsp;
+              화장품제조판매업 등록필증 제 1163호
+            </li>
+            <li>COPYRIGHT (C) 2008 SIDMOOL ALL RIGHTS RESERVED</li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
